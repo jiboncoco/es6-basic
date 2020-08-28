@@ -1,16 +1,10 @@
 // ES5
 
-const myCar = ['BMW', 'Jaguar', 'Mclaren'];
-// for (var i = 0; i < myCar.length; i++) {
-//     console.log(myCar[i]);
-// }
+const user_place = document.getElementById('user');
 
-// console.log(i);
+const user_logged = "Fauzi";
+// user_place.innerHTML = "HI, " + user_logged + " How are you ?";
 
 // ES6
 
-for (let i = 0; i < myCar.length; i++) {
-    console.log(myCar[i]);
-}
-
-console.log(i);
+user_place.innerHTML = `Hi, ${user_logged} How are you dude ?`;
