@@ -1,16 +1,16 @@
 // ES5
 
-var tahun2020 = "dapat memiliki mobil dengan cash tanpa kredit";
+const myCar = ['BMW', 'Jaguar', 'Mclaren'];
+// for (var i = 0; i < myCar.length; i++) {
+//     console.log(myCar[i]);
+// }
 
-tahun2020 = "dapat memiliki rumah dan mobil dengan cash tanpa kredit";
-console.log(tahun2020);
+// console.log(i);
 
 // ES6
 
-const tahun2021 = "dapat memiliki rumah 2 lantai dan mobil dengan cash tanpa kredit";
-console.log(tahun2021);
+for (let i = 0; i < myCar.length; i++) {
+    console.log(myCar[i]);
+}
 
-let diTahun2021 = "bisa pergi haji bersama keluarga & istri";
-
-diTahun2021 = "nikah di bulan june 2020";
-console.log(diTahun2021);
+console.log(i);
