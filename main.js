@@ -1,10 +1,29 @@
+// get element
+
+const cart_items = document.getElementById('cart');
+
 // ES5
 
-const user_place = document.getElementById('user');
+// function addProduct(name, category){
+//     return {
+//         name: name,
+//         category: category
+//     }
+// }
 
-const user_logged = "Fauzi";
-// user_place.innerHTML = "HI, " + user_logged + " How are you ?";
+// var getProduct = addProduct('iPhone 11', 'Gadget');
+// console.log(getProduct);
 
 // ES6
 
-user_place.innerHTML = `Hi, ${user_logged} How are you dude ?`;
+function addProduct(name, category){
+    return {
+        name,
+        category
+    }
+}
+
+var getProduct = addProduct('iPhone 11', 'Gadget');
+cart_items.innerHTML = `Product : ${getProduct.name} |  Category : ${getProduct.category}`
+
+console.log(getProduct);
