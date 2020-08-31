@@ -1,29 +1,25 @@
 // get element
 
-const cart_items = document.getElementById('cart');
+const skillHolder = document.getElementById('skills');
 
 // ES5
 
-// function addProduct(name, category){
-//     return {
-//         name: name,
-//         category: category
-//     }
-// }
 
-// var getProduct = addProduct('iPhone 11', 'Gadget');
-// console.log(getProduct);
 
 // ES6
 
-function addProduct(name, category){
-    return {
-        name,
-        category
-    }
-}
+const yourSkills = ['PHP Framework Laravel', 'Python', 'ReactJS'];
 
-var getProduct = addProduct('iPhone 11', 'Gadget');
-cart_items.innerHTML = `Product : ${getProduct.name} |  Category : ${getProduct.category}`
+// add item to array
+yourSkills.push('VueJS');
 
-console.log(getProduct);
+// add html to array
+let parent = '<ul>';
+
+yourSkills.forEach((skill) => {
+    parent += `<li>  ${skill} </li>`;
+    console.log(`${skill}`);
+});
+
+parent += '</ul>';
+skillHolder.innerHTML = parent;
